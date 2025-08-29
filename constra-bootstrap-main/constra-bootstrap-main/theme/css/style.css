@@ -3411,69 +3411,62 @@ label {
 }
 
 #services-widget {
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  max-width: 400px; /* Ukuran yang lebih proporsional */
+  background: #ffffff; /* Latar belakang putih */
   border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  max-width: 600px; /* Melebarkan kotak */
-  margin: 100px auto 0;
-  margin-bottom: auto 0; /* Menurunkan posisi ke bawah dengan 100px dari atas, memusatkan */
-  text-align: center; /* Memusatkan teks */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 #services-widget:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Kembali ke warna bayangan default */
+}
+
+#services-widget .widget-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #1a202c;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 #services-widget .list-arrow li {
   opacity: 0.9;
   transition: all 0.3s ease;
   animation: fadeInUp 0.5s ease forwards;
-  font-size: 18px; /* Memperbesar teks */
 }
 
 #services-widget .list-arrow li:hover {
   opacity: 1;
-  transform: translateX(15px) scale(1.05);
-  color: #C52D31;
+  transform: translateX(10px);
 }
 
 #services-widget .list-arrow li a {
-  display: inline-block;
-  position: relative;
-  padding: 10px 20px; /* Padding yang lebih lega */
-  border-left: 4px solid transparent;
-  transition: all 0.3s ease;
-  font-size: 18px; /* Memperbesar teks link */
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #4a5568;
+  text-decoration: none;
 }
 
-#services-widget .list-arrow li:hover a {
-  border-left-color: #C52D31;
-  background: rgba(197, 45, 49, 0.1); /* Kembali ke warna aksen asli */
-  border-radius: 5px;
+#services-widget .list-arrow li a:hover {
+  color: #C52D31; /* Warna maroon saat hover */
 }
 
 #services-widget .list-arrow li a::before {
-  content: "\f105";
+  content: "\f105"; /* Icon panah dari Font Awesome */
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  margin-right: 15px;
+  margin-right: 10px;
   color: #C52D31;
   opacity: 0;
   transition: opacity 0.3s ease;
-  font-size: 20px; /* Memperbesar ikon */
 }
 
-#services-widget .list-arrow li:hover a::before {
+#services-widget .list-arrow li a:hover::before {
   opacity: 1;
-  animation: bounceIn 0.3s ease;
-}
-
-#services-widget .widget-title {
-  font-size: 24px; /* Memperbesar judul "Services" */
 }
 
 @keyframes fadeInUp {
@@ -3487,9 +3480,17 @@ label {
   }
 }
 
-@keyframes bounceIn {
-  0% { transform: scale(0); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
+/* Responsivitas */
+@media (max-width: 768px) {
+  #services-widget {
+    max-width: 100%;
+    padding: 15px;
+  }
+  #services-widget .widget-title {
+    font-size: 1.75rem;
+  }
+  #services-widget .list-arrow li a {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
