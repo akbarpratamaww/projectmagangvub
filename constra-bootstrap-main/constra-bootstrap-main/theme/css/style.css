@@ -667,7 +667,7 @@ ul.top-info li p.info-text {
 
 .header-one,
 .header-one .site-navigation {
-  background: #23282d;
+  background: #C52D31;
 }
 
 .header-one .navbar-collapse {
@@ -1184,7 +1184,7 @@ ul.navbar-nav > li > a {
 
 .header-get-a-quote .btn-primary:hover {
   background: #272d33;
-  color: #C52D31 !important;
+  color: #ffffff !important;
 }
 
 ul.navbar-nav > li.header-get-a-quote:hover > a:after {
