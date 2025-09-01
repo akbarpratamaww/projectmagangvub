@@ -3494,6 +3494,7 @@ label {
   }
 }
 
+<<<<<<< Updated upstream
 .project-address {
   font-size: 8px;     /* perkecil tulisan */
   line-height: 1.1;    /* rapatkan baris */
@@ -3585,5 +3586,57 @@ label {
     transform: translateY(-8px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     background: #eef2f7;
+=======
+/* Custom Styles for Plant Cards */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #1a202c;
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+  color: #C52D31;
+}
+
+.list-unstyled li {
+  margin-bottom: 8px;
+}
+
+.list-unstyled strong {
+  color: #2d3748;
+}
+
+/* Animations with Wow.js */
+.wow {
+  visibility: hidden;
+}
+
+.fadeInLeft, .fadeInRight, .fadeInUp {
+  visibility: visible;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  .card-title {
+    font-size: 1.25rem;
+  }
+>>>>>>> Stashed changes
 }
 /*# sourceMappingURL=style.css.map */
