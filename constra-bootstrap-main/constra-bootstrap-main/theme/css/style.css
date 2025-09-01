@@ -3495,11 +3495,17 @@ label {
 }
 
 .project-address {
-  font-size: 9px;     /* perkecil tulisan */
+  font-size: 8px;     /* perkecil tulisan */
   line-height: 1.1;    /* rapatkan baris */
   color: #ffffff;         /* bisa ganti warna biar lebih jelas */
   max-height: 150px;   /* batasi tinggi kalau mau scroll */
   overflow-y: auto;    /* biar bisa discroll kalau tetap kepanjangan */
+}
+
+.project-img-container img {
+  width: 100%;
+  height: 250px;   /* bisa disesuaikan */
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
