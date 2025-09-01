@@ -3495,6 +3495,7 @@ label {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .project-address {
   font-size: 8px;     /* perkecil tulisan */
   line-height: 1.1;    /* rapatkan baris */
@@ -3587,6 +3588,8 @@ label {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     background: #eef2f7;
 =======
+=======
+>>>>>>> Stashed changes
 /* Custom Styles for Plant Cards */
 .card {
   transition: all 0.3s ease;
@@ -3637,6 +3640,9 @@ label {
   .card-title {
     font-size: 1.25rem;
   }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 /*# sourceMappingURL=style.css.map */
