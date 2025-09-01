@@ -3493,4 +3493,13 @@ label {
     font-size: 14px;
   }
 }
+
+.project-address {
+  font-size: 9px;     /* perkecil tulisan */
+  line-height: 1.1;    /* rapatkan baris */
+  color: #ffffff;         /* bisa ganti warna biar lebih jelas */
+  max-height: 150px;   /* batasi tinggi kalau mau scroll */
+  overflow-y: auto;    /* biar bisa discroll kalau tetap kepanjangan */
+}
+
 /*# sourceMappingURL=style.css.map */
